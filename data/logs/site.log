@@ -1,0 +1,6 @@
+2012/04/18 02:50:51 [/admin/index.php] access error. from 111.171.157.22
+2012/04/18 02:50:51 [/admin/index.php] login: user=lucent08(2) auth=0 lastlogin= sid= from 111.171.157.22
+2012/04/18 02:50:51 [/admin/home.php] access : user=lucent08 auth=0 sid=gtachvee7u531lpnpl63sp60c1 from 111.171.157.22
+2012/04/18 02:50:51 [/admin/home.php]  *use Services_JSON::decode(). faster than using the json_decode! from 111.171.157.22
+2012/04/18 02:51:56 [/admin/home.php] access : user=lucent08 auth=0 sid=gtachvee7u531lpnpl63sp60c1 from 111.171.157.22
+2012/04/18 02:51:56 [/admin/home.php]  *use Services_JSON::decode(). faster than using the json_decode! from 111.171.157.22
