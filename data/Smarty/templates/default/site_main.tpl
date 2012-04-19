@@ -57,6 +57,7 @@
     <!--{* ▲HEADER *}-->
 
     <!--{* ▼CONTENTS *}-->
+    <div id="wrapper">
     <div id="container" class="clearfix">
 
         <!--{* ▼TOP COLUMN*}-->
@@ -180,6 +181,7 @@
         <!--{/if}-->
         <!--{* ▲BOTTOM COLUMN*}-->
 
+    </div>
     </div>
     <!--{* ▲CONTENTS *}-->
 

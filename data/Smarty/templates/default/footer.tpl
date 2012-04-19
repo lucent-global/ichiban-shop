@@ -22,11 +22,13 @@
 <!--▼FOOTER-->
 <div id="footer_wrap">
     <div id="footer" class="clearfix">
-        <div id="pagetop"><a href="#top">このページの先頭へ</a></div>
-        <div id="copyright">Copyright ©
-            <!--{if $smarty.const.RELEASE_YEAR != $smarty.now|date_format:"%Y"}--><!--{$smarty.const.RELEASE_YEAR}-->-<!--{/if}--><!--{$smarty.now|date_format:"%Y"}-->
-            <!--{$arrSiteInfo.shop_name_eng|default:$arrSiteInfo.shop_name|h}--> All rights reserved.
-        </div>
+        <p>1日1ピン限定の超お得タイムセールの『いちばんショップ』｜</p>
+        <ul class="clearfix">
+        	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/login">マイページ</a></li>
+        	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/">ご利用ガイド</a></li>
+        	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/">お問い合わせ</a></li>
+        	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->abouts/">会社概要</a></li>
+        </ul>
     </div>
 </div>
 <!--▲FOOTER-->

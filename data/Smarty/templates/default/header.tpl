@@ -23,10 +23,9 @@
 <div id="header_wrap">
     <div id="header" class="clearfix">
         <div id="logo_area">
-            <p id="site_description">EC-CUBE発!世界中を旅して見つけた立方体グルメを立方隊長が直送！</p>
-            <h1>
-                <a href="<!--{$smarty.const.TOP_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/common/logo.gif" alt="EC-CUBE ONLINE SHOPPING SITE" /><span><!--{$arrSiteInfo.shop_name|h}-->/<!--{$tpl_title|h}--></span></a>
-            </h1>
+            <p>
+                <a href="<!--{$smarty.const.TOP_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/common/header-h1.png" alt="1ban-shop 超お得タイムセールサイト" /><span><!--{$arrSiteInfo.shop_name|h}-->/<!--{$tpl_title|h}--></span></a>
+            </p>
         </div>
         <div id="header_utility">
             <div id="headerInternalColumn">
@@ -46,18 +45,14 @@
             <!--{/if}-->
             <!--{* ▲HeaderInternal COLUMN*}-->
             </div>
+            <div id="countDown" style="width:440px; height:128px;">カウントダウン</div>
             <div id="header_navi">
                 <ul>
-                    <li class="mypage">
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/common/btn_header_mypage_on.jpg','mypage');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/common/btn_header_mypage.jpg','mypage');"><img src="<!--{$TPL_URLPATH}-->img/common/btn_header_mypage.jpg" alt="MYページ" name="mypage" id="mypage" /></a>
-                    </li>
-                    <li class="entry">
-                        <a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/kiyaku.php" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/common/btn_header_entry_on.jpg','entry');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/common/btn_header_entry.jpg','entry');"><img src="<!--{$TPL_URLPATH}-->img/common/btn_header_entry.jpg" alt="会員登録" name="entry" id="entry" /></a>
-                    </li>
-                    <li>
-                        <a href="<!--{$smarty.const.CART_URLPATH}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/common/btn_header_cart_on.jpg','cartin');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/common/btn_header_cart.jpg','cartin');"><img src="<!--{$TPL_URLPATH}-->img/common/btn_header_cart.jpg" alt="カゴの中を見る" name="cartin" id="cartin" /></a>
-                    </li>
+                    <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/login.php">Myページ</a></li>
+                    <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/">ご利用ガイド</a></li>
+                    <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/">お問い合わせ</a></li>
                 </ul>
+                <div id="custmerReist"><a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/">無料会員登録</a></div>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-04-18 03:52:59
+<?php /* Smarty version 2.6.26, created on 2012-04-19 04:40:04
          compiled from ./site_main.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'function_exists', './site_main.tpl', 24, false),array('modifier', 'script_escape', './site_main.tpl', 28, false),array('modifier', 'count', './site_main.tpl', 37, false),)), $this); ?>
@@ -51,7 +51,8 @@ unset($_smarty_tpl_vars);
  ?>
     <?php endif; ?>
     
-        <div id="container" class="clearfix">
+        <div id="wrapper">
+    <div id="container" class="clearfix">
 
                 <?php if (count(((is_array($_tmp=$this->_tpl_vars['arrPageLayout']['TopNavi'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp))) > 0): ?>
             <div id="topcolumn">
@@ -214,6 +215,7 @@ unset($_smarty_tpl_vars);
                             </div>
         <?php endif; ?>
         
+    </div>
     </div>
     
         <?php if (((is_array($_tmp=$this->_tpl_vars['arrPageLayout']['footer_chk'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) != 2): ?>

@@ -1,7 +1,7 @@
 <?php
     define ('ECCUBE_INSTALL', 'ON');
-    define ('HTTP_URL', 'http://y-kamata.dev.1ban-shop.com/');
-    define ('HTTPS_URL', 'http://y-kamata.dev.1ban-shop.com/');
+    define ('HTTP_URL', 'http://s-kadowaki.dev.1ban-shop.com/');
+    define ('HTTPS_URL', 'http://s-kadowaki.dev.1ban-shop.com/');
     define ('ROOT_URLPATH', '/');
     define ('DOMAIN_NAME', '');
     define ('DB_TYPE', 'pgsql');
