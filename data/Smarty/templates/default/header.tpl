@@ -27,33 +27,29 @@
                 <a href="<!--{$smarty.const.TOP_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/common/header-h1.png" alt="1ban-shop 超お得タイムセールサイト" /><span><!--{$arrSiteInfo.shop_name|h}-->/<!--{$tpl_title|h}--></span></a>
             </p>
         </div>
-        <div id="header_utility">
-            <div id="headerInternalColumn">
-            <!--{* ▼HeaderInternal COLUMN*}-->
-            <!--{if $arrPageLayout.HeaderInternalNavi|@count > 0}-->
-                <!--{* ▼上ナビ *}-->
-                <!--{foreach key=HeaderInternalNaviKey item=HeaderInternalNaviItem from=$arrPageLayout.HeaderInternalNavi}-->
-                    <!-- ▼<!--{$HeaderInternalNaviItem.bloc_name}--> -->
-                    <!--{if $HeaderInternalNaviItem.php_path != ""}-->
-                        <!--{include_php file=$HeaderInternalNaviItem.php_path items=$HeaderInternalNaviItem}-->
-                    <!--{else}-->
-                        <!--{include file=$HeaderInternalNaviItem.tpl_path items=$HeaderInternalNaviItem}-->
-                    <!--{/if}-->
-                    <!-- ▲<!--{$HeaderInternalNaviItem.bloc_name}--> -->
-                <!--{/foreach}-->
-                <!--{* ▲上ナビ *}-->
-            <!--{/if}-->
-            <!--{* ▲HeaderInternal COLUMN*}-->
-            </div>
-            <div id="countDown" style="width:440px; height:128px;">カウントダウン</div>
-            <div id="header_navi">
-                <ul>
-                    <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/login.php">Myページ</a></li>
-                    <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/">ご利用ガイド</a></li>
-                    <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/">お問い合わせ</a></li>
-                </ul>
-                <div id="custmerReist"><a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/">無料会員登録</a></div>
-            </div>
+            
+        <div id="countDown">
+         	<object width="440" height="128" data="<!--{$TPL_URLPATH}-->img/flash/timer.swf" type="application/x-shockwave-flash">
+           		<param value="<!--$TPL_URLPATH}-->img/flash/timer.swf" name="movie" />
+           		<param value="heig" name="quality" />
+          		<param value="true" name="play" />
+           		<param value="true" name="loop" />
+           		<param value="transparent" name="wmode" />
+            	<param value="showall" name="scale" />
+           		<param value="true" name="menu" />
+           		<param value="false" name="devicefont" />
+           		<param value="" name="salign" />
+           		<param value="sameDomaine" name="allowScriptAccess" />
+             </object>
+           	<a href="http://www.adobe.com/go/getflash" style="display:none"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Adobe Flash Player を取得" </a>
+    　　 </div>
+        <div id="header_navi">
+             <ul>
+                <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/login.php">Myページ</a></li>
+                <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/">ご利用ガイド</a></li>
+                <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/">お問い合わせ</a></li>
+             </ul>
+             <div id="custmerReist"><a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/">無料会員登録</a></div>
         </div>
     </div>
 </div>
