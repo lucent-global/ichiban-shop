@@ -86,23 +86,19 @@ define('OPTION_RECOMMEND', 1);
 /** 商品規格登録(有効:1 無効:0) */
 define('OPTION_CLASS_REGIST', 1);
 /** 会員登録変更(マイページ)パスワード用 */
-define('DEFAULT_PASSWORD', "********");
+define('DEFAULT_PASSWORD', "******");
 /** 別のお届け先最大登録数 */
 define('DELIV_ADDR_MAX', 20);
 /** 対応状況管理画面の一覧表示件数 */
 define('ORDER_STATUS_MAX', 50);
 /** フロントレビュー書き込み最大数 */
 define('REVIEW_REGIST_MAX', 5);
-/** デバッグモード(true：sfPrintRやDBのエラーメッセージを出力する、false：出力しない) */
+/** デバッグモード(true：sfPrintRやDBのエラーメッセージ、ログレベルがDebugのログを出力する、false：出力しない) */
 define('DEBUG_MODE', false);
 /** 管理ユーザID(メンテナンス用表示されない。) */
 define('ADMIN_ID', "1");
 /** 会員登録時に仮会員確認メールを送信するか (true:仮会員、false:本会員) */
-define('CUSTOMER_CONFIRM_MAIL', false);
-/** メルマガ配信(true:配信する、false:配信しない) */
-define('MELMAGA_SEND', true);
-/** メイルマガジンバッチモード(true:バッチで送信する ※要cron設定、false:リアルタイムで送信する) */
-define('MELMAGA_BATCH_MODE', false);
+define('CUSTOMER_CONFIRM_MAIL', true);
 /** ログイン画面フレーム */
 define('LOGIN_FRAME', "login_frame.tpl");
 /** 管理画面フレーム */
@@ -508,6 +504,8 @@ define('DOWN_TEMP_REALDIR', DATA_REALDIR . "download/temp/");
 define('DOWN_SAVE_REALDIR', DATA_REALDIR . "download/save/");
 /** ダウンロードファイル存在エラー */
 define('DOWNFILE_NOT_FOUND', 22);
+/** ダウンロード販売機能用オンライン決済payment_id(カンマ区切り) */
+define('ONLINE_PAYMENT', "1");
 /** ダウンロード販売機能 ダウンロードファイル読み込みバイト(KB) */
 define('DOWNLOAD_BLOCK', 1024);
 /** 新規注文 */
@@ -580,7 +578,7 @@ define('CSV_COLUMN_RW_FLG_KEY_FIELD', 3);
 define('UNLIMITED_FLG_UNLIMITED', "1");
 /** 無制限フラグ： 制限有り */
 define('UNLIMITED_FLG_LIMITED', "0");
-/** EC-CUBE更新情報取得 (true:取得する false:取得しない) */
+/**  EC-CUBE更新情報取得 (true:取得する false:取得しない) */
 define('ECCUBE_INFO', true);
 /** 外部サイトHTTP取得タイムアウト時間(秒) */
 define('HTTP_REQUEST_TIMEOUT', "5");

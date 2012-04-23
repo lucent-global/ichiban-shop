@@ -2,16 +2,7 @@
 
 /************************************************
  共通設定
-************************************************ */
-/*body {
-    color: #666;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
-    background-color: #f5f5f5;
-    font-size: 72.5%;
-    line-height: 150%;
-    letter-spacing: 0.1em;
-}*/
-
+*************************************************/
 body {
 	background:url(../img/background/header-bg.jpg) no-repeat #F6F7F8;
 	font-family:Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meyryo, Osaka, "MS　P ゴシック", "MS PGothic", sans-serif;
@@ -39,6 +30,7 @@ select {
 /* ラッパー */
 #wrapper {
 	width:100%;
+	margin:0;
     background:url(../img/background/main-bg-texture.jpg) repeat-x;
     min-width:1172px;
 }
@@ -46,76 +38,43 @@ select {
 /* コンテンツ */
 #container {
     margin: 0 auto;
-    padding: 0 0 30px 0;
+    padding-top:10px;
     width: 1172px;
-    background: #fff;
-    text-align: left;
+    background:url(../img/background/layout-bg.png) no-repeat;
+}
+
+/* メイン */
+#layout {
+	width:949px;
+	background:#FFFFFF;
+	border-radius:4px 4px 0 0;
+	box-shadow:0 0 5px #555555;
+	margin:-31px auto 0;
+	padding:52px 0 92px 29px;
+	font-size:14px;
 }
 
 
 /* ==============================================
  カラム指定
 =============================================== */
-/* ヘッダーとフッターの上下
-[注意]ブロック移動時はbloc.css内で調整が必要 */
-#topcolumn ,
-#bottomcolumn ,
-#footerbottomcolumn {
-    margin: 0 auto;
-    padding: 15px;
-    width: 950px;
-    background: #fff;
-    text-align: left;
-}
-
-/* 中央カラム */
-.main_column {
-    padding: 10px 0 20px;
-}
-
 /* サイドカラム */
-#leftcolumn {
-    float: left;
-    width: 20%;
-}
 #rightcolumn {
-    float: right;
-    width: 20%;
+    float: left;
+    width:259px;
 }
 
 /* 1カラム設定 */
 #one_maincolumn {
-    margin: 0 auto;
-    width: 80%;
+	width:900px;
 }
 
 /* 2カラム設定 (メイン部が左) */
 #two_maincolumn_left {
-    padding-left: 1.5%;
     float: left;
-    width: 78%;
+    width: 632px;
+    margin-right:32px;
 }
-
-/* 2カラム設定 (メイン部が右) */
-#two_maincolumn_right {
-    padding-right: 1.5%;
-    width: 78%;
-    float: right;
-}
-
-/* 3カラム設定 */
-#three_maincolumn {
-    padding-left: 0.5%;
-    width: 59%;
-    float: left;
-}
-
-/* 下層コンテンツ */
-#undercolumn {
-    width: 100%;
-    margin: 0 0 30px 0;
-}
-
 
 /* ==============================================
  ユーティリティ
@@ -266,11 +225,19 @@ input[type='password'] ,
 h2.title {
     margin-bottom: 10px;
     padding: 8px;
-    border-top: solid 1px #ebeced;
-    color: #f60;
-    background: url("../img/background/bg_tit_sub_01.jpg") repeat-x left bottom;
-    background-color: #fef3d8;
-    font-size: 170%;
+    color: #FD7C65;
+    /*background: url("../img/background/bg_tit_sub_01.jpg") repeat-x left bottom;*/
+    background-color: #FDFFAC;
+    font-size: 140%;
+    -moz-text-shadow:1px 1px 0 #FFFFFF;
+    -moz-text-shadow:-1px 0px 1px #B35764;
+    -webkit-text-shadow:1px 1px 0 #FFFFFF;
+    -webkit-text-shadow:-1px 0px 1px #B35764;
+    text-shadow:1px 1px 0 #FFFFFF;
+    text-shadow:-1px 0px 1px #B35764;
+    -moz-box-shadow:-1px -1px 0 #D2D48D;
+    -webkit-box-shadow:-1px -1px 0 #D2D48D;
+    box-shadow:-1px -1px 0 #D2D48D;
 }
 
 #one_maincolumn .sub_area h3 ,
@@ -283,7 +250,7 @@ h2.title {
 #undercolumn_cart h3 {
     margin: 0 0 10px 0;
     padding: 5px 0 10px;
-    color: #f60;
+    color: #FB7555;
     background: url("../img/background/line_01.gif") repeat-x left bottom;
     font-size: 120%;
 }
@@ -306,18 +273,9 @@ div#undercolumn_login .login_area h4 {
 }
 
 #header {
-    margin: auto;
-    width: 1172px;
-}
-#logo_area {
-    padding-left: 10px;
-    float: left;
-    width: 390px;
-    text-align: left;
-}
-#header_utility {
-    float: right;
-    width: 580px;
+    margin:0 auto;
+    width:1172px;
+    position:relative;
 }
 
 #errorHeader {
@@ -332,7 +290,8 @@ div#undercolumn_login .login_area h4 {
 /* ロゴ
 ----------------------------------------------- */
 #logo_area p {
-	margin:39px 76px 0 0;
+	margin-left:76px;
+	padding-top:39px;
     width: 374px;
     height: 147px;
 }
@@ -344,34 +303,83 @@ div#undercolumn_login .login_area h4 {
 /* ヘッダーナビ
 ----------------------------------------------- */
 div#header_navi {
-    float: right;
-    width: 409px;
-    height: 38px;
-}
-div#header_navi ul li {
-    display: block;
-    float: left;
-}
-div#header_navi ul li.mypage,
-div#header_navi ul li.entry {
-    margin-top: 6px;
+	left:604px;
+	position:absolute;
+	top:157px;
+	z-index:1;
 }
 
+div#header_navi ul {
+	background:url(../img/background/nav-bg.png) no-repeat;
+	overflow:hidden;
+	float:left;
+	padding:8px 0 8px 8px;
+
+}
+
+div#header_navi ul li {
+	float:left;
+}
+
+div#header_navi ul li a {
+	display:block;
+	height:39px;
+	text-indent:-9999px;
+}
+
+li#nav_mypage a {
+	background:url(../img/common/nav-mypage.png) no-repeat;
+	width:121px;
+}
+
+li#nav_guide a {
+	background:url(../img/common/nav-useguide.png) no-repeat;
+	width:118px;
+}
+
+li#nav_contact a {
+	background:url(../img/common/nav-contact.png) no-repeat;
+	width:150px;
+}
+
+div#custmerRegist {
+	position:absolute;
+	left:320px;
+	top:-80px;
+}
+
+div#custmerRegist a {
+	display:block;
+	background:url(../img/common/customer-register.png) no-repeat;
+	width:149px;
+	height:149px;
+	text-indent:-9999px;
+}
+
+/* ヘッダーフラッシュ
+------------------------------------------------ */
+
+div#countDown {
+	padding-top: 46px;
+	position: absolute;
+	right:253px;
+	top: -33px;
+}
 
 /* ==============================================
  フッター
 =============================================== */
 #footer_wrap {
     width:100%;
-    height: 80px;
+    height:80px;
     background:url(../img/background/footer-bg-gra.png) repeat-x #E0E0E0;
     border-top:1px solid #9C98A7;
+    font-size:12px;
 }
 #footer {
     margin: auto;
     padding-top: 10px;
-    border-top: solid 1px #ccc;
-    width: 1172px;
+    width: 972px;
 }
 
 #footer p, #footer ul li{
@@ -399,6 +407,21 @@ div#header_navi ul li.entry {
     display: inline;
 }
 
+.link_button a {
+	display:inline-block;
+	background:url(../img/button/link-button.png) no-repeat;
+	width:205px;
+	padding:10px 0;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:16px;
+}
+
+.link_button a:hover {
+	text-decoration:none;
+	opacity:0.8;
+	color:#FFFFFF;
+}
 
 /* 完了メッセージ
 ----------------------------------------------- */

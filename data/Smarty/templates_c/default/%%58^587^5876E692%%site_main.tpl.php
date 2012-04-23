@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-04-19 04:40:04
+<?php /* Smarty version 2.6.26, created on 2012-04-19 21:44:42
          compiled from ./site_main.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'function_exists', './site_main.tpl', 24, false),array('modifier', 'script_escape', './site_main.tpl', 28, false),array('modifier', 'count', './site_main.tpl', 37, false),)), $this); ?>
@@ -52,8 +52,8 @@ unset($_smarty_tpl_vars);
     <?php endif; ?>
     
         <div id="wrapper">
-    <div id="container" class="clearfix">
-
+    <div id="container">
+   	<div id="layout" class="clearfix">
                 <?php if (count(((is_array($_tmp=$this->_tpl_vars['arrPageLayout']['TopNavi'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp))) > 0): ?>
             <div id="topcolumn">
                                 <?php $_from = ((is_array($_tmp=$this->_tpl_vars['arrPageLayout']['TopNavi'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
@@ -214,7 +214,7 @@ unset($_smarty_tpl_vars);
                 <?php endforeach; endif; unset($_from); ?>
                             </div>
         <?php endif; ?>
-        
+        	</div>
     </div>
     </div>
     

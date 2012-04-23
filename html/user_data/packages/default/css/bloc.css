@@ -31,26 +31,11 @@
 /* ==============================================
 ブロック共通
 /* ============================================= */
-#container .bloc_body {
-    background-color: #fff;
-}
-.side_column {
-    overflow-x: hidden; /* IE6 表示乱れ防止 */
-}
-.side_column .bloc_outer {
-    margin: 10px 7%;
-}
+
 .side_column .bloc_body ,
 .main_column .bloc_body {
     border: solid 1px #ccc;
     border-top: none;
-}
-.side_column .bloc_body .box {
-    border: solid 1px #ccc;
-    width: 145px;
-}
-.main_column .bloc_outer {
-    margin-bottom: 20px;
 }
 
 

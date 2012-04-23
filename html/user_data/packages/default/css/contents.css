@@ -8,10 +8,6 @@
 =============================================== */
 /* メインイメージ
 ----------------------------------------------- */
-#main_image {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
 /* ==============================================
 ▼下層
@@ -22,6 +18,30 @@
 /* ◎◎について
 ----------------------------------------------- */
 div#undercolumn_aboutus {
+	font-size:12px;
+}
+
+div#undercolumn_aboutus > dl > dt {
+	font-weight:bold;
+	line-height:190%;
+}
+
+div#undercolumn_aboutus > dl > dd {
+	margin-bottom:15px;
+}
+
+dl#repeat_contact dt {
+	float:left;	
+	clear:left;
+	line-height:160%;
+}
+
+dl#repeat_contact dt:after {
+	content:" ： "
+}
+
+dl#repeat_contact dd {
+	line-height:160%;
 }
 
 /* 特定商取引法
@@ -34,6 +54,11 @@ div#undercolumn_order {
 div#undercolumn_contact {
     margin: 0 auto;
     width: 100%;
+    font-size:12px;
+}
+
+div#undercolumn_contact p{
+	margin-bottom:15px;
 }
 
 .zipimg img {
@@ -51,6 +76,7 @@ div#mypagecolumn {
 }
 
 div#mynavi_area {
+	position:relative;
     width: 100%;
 }
 
@@ -58,15 +84,15 @@ div#mycontents_area {
     width: 100%;
 }
 div#mynavi_area .mynavi_list {
-    margin-bottom: 20px;
-    width: 100%;
+    margin-bottom: 10px;
+    font-size:12px;
+    text-align:right;
 }
 div#mynavi_area .mynavi_list li {
     margin:0 15px 5px 0;
     padding-left: 15px;
-    float: left;
+    display:inline-block;
     background: url('../img/icon/ico_arrow_01.gif') no-repeat left ;
-    font-size: 120%;
 }
 
 div#mynavi_area div.point_announce {
@@ -352,7 +378,7 @@ div.listrightbloc .cartin_btn {
 /* レイアウト
 ----------------------------------------------- */
 /* 1カラム用 */
-#one_maincolumn div#detailphotobloc {
+/*#one_maincolumn div#detailphotobloc {
     width: 37%;
     float: left;
 }
@@ -373,9 +399,9 @@ div.listrightbloc .cartin_btn {
 #one_maincolumn p.subtext {
     margin-bottom: 20px;
 }
-
+*/
 /* 2カラム用 */
-#two_maincolumn_left div#detailphotobloc ,
+/*#two_maincolumn_left div#detailphotobloc ,
 #two_maincolumn_right div#detailphotobloc {
     float: left;
     width: 37%;
@@ -400,10 +426,10 @@ div.listrightbloc .cartin_btn {
     float: right;
     width: 25%;
     text-align: right;
-}
+}*/
 
 /* 3カラム用 */
-#three_maincolumn div#detailphotobloc {
+/*#three_maincolumn div#detailphotobloc {
     float: left;
     width: 49%;
 }
@@ -424,7 +450,7 @@ div.listrightbloc .cartin_btn {
     width: 35%;
     text-align: right;
 }
-
+*/
 /* 商品情報 各種設定
 ----------------------------------------------- */
 #detailrightbloc h2 {
@@ -444,7 +470,6 @@ div.listrightbloc .cartin_btn {
 #detailrightbloc .main_comment {
     margin-bottom: 20px;
 }
-
 /* 商品コード */
 #detailrightbloc .product_code dt,
 #detailrightbloc .product_code dd {
@@ -735,5 +760,29 @@ p.condition_area {
     padding: 5px;
     border: solid 1px #333;
     width: 566px;
+}
+
+/* ==============================================
+▼利用規約
+=============================================== */
+#undercolumn_entry {
+	font-size:12px;
+}
+
+#undercolumn_entry > ol{
+	margin-top:20px;
+}
+
+#undercolumn_entry ol li span {
+	font-weight:bold;
+	font-size:14px;
+}
+
+#undercolumn_entry ol li ol {
+	margin:15px 0 15px 40px;
+}
+
+#undercolumn_entry ol li ol li {
+	list-style-type:decimal;
 }
 

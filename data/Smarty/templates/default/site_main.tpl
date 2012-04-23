@@ -58,8 +58,8 @@
 
     <!--{* ▼CONTENTS *}-->
     <div id="wrapper">
-    <div id="container" class="clearfix">
-
+    <div id="container">
+   	<div id="layout" class="clearfix">
         <!--{* ▼TOP COLUMN*}-->
         <!--{if $arrPageLayout.TopNavi|@count > 0}-->
             <div id="topcolumn">
@@ -180,7 +180,7 @@
             </div>
         <!--{/if}-->
         <!--{* ▲BOTTOM COLUMN*}-->
-
+	</div>
     </div>
     </div>
     <!--{* ▲CONTENTS *}-->

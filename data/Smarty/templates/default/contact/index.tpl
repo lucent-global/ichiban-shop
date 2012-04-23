@@ -25,8 +25,9 @@
 
     <div id="undercolumn_contact">
 
-        <p>内容によっては回答をさしあげるのにお時間をいただくこともございます。<br />
-        また、休業日は翌営業日以降の対応となりますのでご了承ください。</p>
+        <p>お問い合わせメールを送信される場合は下記のフォームに必要事項を記入の上「確認画面へ」ボタンを押して送信内容確認画面にお進みください。</p>
+        <p class="mini attention">※ご注文に関するお問い合わせには、必ず「ご注文番号」をご記入くださいますようお願いいたします。</p>
+        
 
         <form name="form1" method="post" action="?">
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
@@ -115,7 +116,7 @@
                 <td>
                     <span class="attention"><!--{$arrErr.contents}--></span>
                     <textarea name="contents" class="box380" cols="60" rows="20" style="<!--{$arrErr.contents.value|h|sfGetErrorColor}-->; ime-mode: active;"><!--{$arrForm.contents.value|h}--></textarea>
-                    <p class="mini attention">※ご注文に関するお問い合わせには、必ず「ご注文番号」をご記入くださいますようお願いいたします。</p>
+                    
                 </td>
             </tr>
         </table>

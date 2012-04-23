@@ -45,11 +45,11 @@
     　　 </div>
         <div id="header_navi">
              <ul>
-                <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/login.php">Myページ</a></li>
-                <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/">ご利用ガイド</a></li>
-                <li><a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/">お問い合わせ</a></li>
+                <li id="nav_mypage"><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/login.php">Myページ</a></li>
+                <li id="nav_guide"><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/privacy.php">ご利用ガイド</a></li>
+                <li id="nav_contact"><a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/">お問い合わせ</a></li>
              </ul>
-             <div id="custmerReist"><a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/">無料会員登録</a></div>
+             <div id="custmerRegist"><a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/">無料会員登録</a></div>
         </div>
     </div>
 </div>

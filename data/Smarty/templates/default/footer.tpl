@@ -25,7 +25,7 @@
         <p>1日1ピン限定の超お得タイムセールの『いちばんショップ』｜</p>
         <ul class="clearfix">
         	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/login">マイページ</a></li>
-        	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/">ご利用ガイド</a></li>
+        	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/privacy.php">ご利用ガイド</a></li>
         	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/">お問い合わせ</a></li>
         	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->abouts/">会社概要</a></li>
         </ul>

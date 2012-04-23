@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2012-04-19 02:40:00
+<?php /* Smarty version 2.6.26, created on 2012-04-20 01:56:54
          compiled from /home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 24, false),array('modifier', 'h', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 24, false),array('modifier', 'default', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 40, false),array('modifier', 'sfGetErrorColor', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 40, false),array('function', 'html_options', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 75, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 24, false),array('modifier', 'h', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 24, false),array('modifier', 'default', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 41, false),array('modifier', 'sfGetErrorColor', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 41, false),array('function', 'html_options', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 76, false),)), $this); ?>
 <!--▼CONTENTS-->
 <div id="undercolumn">
     <h2 class="title"><?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['tpl_title'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp)); ?>
@@ -9,8 +9,9 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_esca
 
     <div id="undercolumn_contact">
 
-        <p>内容によっては回答をさしあげるのにお時間をいただくこともございます。<br />
-        また、休業日は翌営業日以降の対応となりますのでご了承ください。</p>
+        <p>お問い合わせメールを送信される場合は下記のフォームに必要事項を記入の上「確認画面へ」ボタンを押して送信内容確認画面にお進みください。</p>
+        <p class="mini attention">※ご注文に関するお問い合わせには、必ず「ご注文番号」をご記入くださいますようお願いいたします。</p>
+        
 
         <form name="form1" method="post" action="?">
         <input type="hidden" name="<?php echo ((is_array($_tmp=@TRANSACTION_ID_NAME)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
@@ -159,7 +160,7 @@ img/button/btn_address_input.jpg" alt="住所自動入力" /></a>
                     <textarea name="contents" class="box380" cols="60" rows="20" style="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['arrErr']['contents']['value'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp)))) ? $this->_run_mod_handler('sfGetErrorColor', true, $_tmp) : SC_Utils_Ex::sfGetErrorColor($_tmp)); ?>
 ; ime-mode: active;"><?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['arrForm']['contents']['value'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp)); ?>
 </textarea>
-                    <p class="mini attention">※ご注文に関するお問い合わせには、必ず「ご注文番号」をご記入くださいますようお願いいたします。</p>
+                    
                 </td>
             </tr>
         </table>
