@@ -4,3 +4,5 @@ data/Smarty/templates_c/admin/*.php
 data/Smarty/templates_c/default/*.php
 data/Smarty/templates_c/mobile/*.php
 data/Smarty/templages_c/sphone/*.php
+
+data/cache/*

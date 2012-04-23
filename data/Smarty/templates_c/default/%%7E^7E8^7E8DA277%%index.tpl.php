@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-04-20 01:56:54
+<?php /* Smarty version 2.6.26, created on 2012-04-22 22:02:39
          compiled from /home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 24, false),array('modifier', 'h', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 24, false),array('modifier', 'default', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 41, false),array('modifier', 'sfGetErrorColor', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 41, false),array('function', 'html_options', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/contact/index.tpl', 76, false),)), $this); ?>
@@ -165,15 +165,8 @@ img/button/btn_address_input.jpg" alt="住所自動入力" /></a>
             </tr>
         </table>
 
-        <div class="btn_area">
-            <ul>
-                <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/button/btn_confirm_on.jpg', this)" onmouseout="chgImgImageSubmit('<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/button/btn_confirm.jpg', this)" src="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/button/btn_confirm.jpg" alt="確認ページへ" name="confirm" />
-                </li>
-            </ul>
+        <div class="link_button">
+            <button type="submit" name="confirm">確認ページへ</button> 
         </div>
 
         </form>

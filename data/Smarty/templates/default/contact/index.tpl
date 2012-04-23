@@ -121,12 +121,8 @@
             </tr>
         </table>
 
-        <div class="btn_area">
-            <ul>
-                <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm_on.jpg', this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg', this)" src="<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg" alt="確認ページへ" name="confirm" />
-                </li>
-            </ul>
+        <div class="link_button">
+            <button type="submit" name="confirm">確認ページへ</button> 
         </div>
 
         </form>

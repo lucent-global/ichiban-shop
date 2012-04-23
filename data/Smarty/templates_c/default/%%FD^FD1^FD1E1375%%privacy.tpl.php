@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-04-22 21:39:15
+<?php /* Smarty version 2.6.26, created on 2012-04-22 22:46:38
          compiled from /home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/guide/privacy.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/guide/privacy.tpl', 28, false),array('modifier', 'h', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/guide/privacy.tpl', 28, false),)), $this); ?>
@@ -71,7 +71,9 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_esca
         		</ol>
         	</li>
         </ol>
-        <div class="link_button"><a href="<?php echo ((is_array($_tmp=@TOP_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-">トップに戻る</a></div>
+        <div class="link_button">
+        	<a href="<?php echo ((is_array($_tmp=@TOP_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+">トップページへ</a>
+        </div>
     </div>
 </div>

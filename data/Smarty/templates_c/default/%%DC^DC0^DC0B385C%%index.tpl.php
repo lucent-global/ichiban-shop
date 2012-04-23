@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2012-04-20 03:14:21
+<?php /* Smarty version 2.6.26, created on 2012-04-22 22:48:27
          compiled from /home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/abouts/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', '/home/s-kadowaki/s-kadowaki.dev.1ban-shop.com/html/../data/Smarty/templates/default/abouts/index.tpl', 25, false),)), $this); ?>
@@ -34,7 +34,6 @@ $(function() {
 </script>
 <?php endif; ?>
 <div id="undercolumn">
-
     <div id="undercolumn_aboutus">
         <h2 class="title">特定商取引法に基づく表示</h2>
         <dl>
@@ -108,7 +107,10 @@ $(function() {
         	※時間を指定された場合でも、事情により指定時間内に配達ができない事もございます。
         	</dd>
         </dl>
-
+		<div class="link_button">
+			<a href="<?php echo ((is_array($_tmp=@TOP_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+">トップページへ</a>
+		</div>
     </div>
 </div>
 <!--▲CONTENTS-->

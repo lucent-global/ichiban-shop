@@ -73,15 +73,9 @@
                 <td><!--{$arrForm.contents.value|h|nl2br}--></td>
             </tr>
         </table>
-        <div class="btn_area">
-            <ul>
-                <li>
-                    <a href="?" onclick="fnModeSubmit('return', '', ''); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back02');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back02');"> <img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" alt="戻る" name="back02" id="back02" /></a>
-                </li>
-                <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg" alt="送信" name="send" id="send" />
-                </li>
-            </ul>
+        <div class="link_button">
+            <a href="?" onclick="fnModeSubmit('return', '', ''); retyrb fakse;" name="back02" id="back02" />戻る</a>
+            <button type="submit" name="send" id="send">送信</button>
         </div>
 
         </form>

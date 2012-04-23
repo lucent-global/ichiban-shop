@@ -89,6 +89,8 @@
         		</ol>
         	</li>
         </ol>
-        <div class="link_button"><a href="<!--{$smarty.const.TOP_URLPATH}-->">トップに戻る</a></div>
+        <div class="link_button">
+        	<a href="<!--{$smarty.const.TOP_URLPATH}-->">トップページへ</a>
+        </div>
     </div>
 </div>

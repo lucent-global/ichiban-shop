@@ -407,20 +407,37 @@ div#countDown {
     display: inline;
 }
 
+.link_button {
+	font-size:14px;
+}
+
 .link_button a {
 	display:inline-block;
 	background:url(../img/button/link-button.png) no-repeat;
-	width:205px;
-	padding:10px 0;
+	width:137px;
+	padding:3px 0;
 	text-align:center;
 	color:#FFFFFF;
-	font-size:16px;
 }
 
 .link_button a:hover {
 	text-decoration:none;
 	opacity:0.8;
 	color:#FFFFFF;
+}
+
+.link_button button {
+	width:137px;
+	text-align:center;
+	background:url(../img/button/link-button.png) no-repeat;
+	color:#FFFFFF;
+	border:none;
+	padding:3px 0;
+	cursor:pointer;
+}
+
+.link_button button:hover {
+	opacity:0.8;
 }
 
 /* 完了メッセージ

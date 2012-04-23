@@ -51,7 +51,6 @@ $(function() {
 </script>
 <!--{/if}-->
 <div id="undercolumn">
-
     <div id="undercolumn_aboutus">
         <h2 class="title">特定商取引法に基づく表示</h2>
         <dl>
@@ -125,7 +124,9 @@ $(function() {
         	※時間を指定された場合でも、事情により指定時間内に配達ができない事もございます。
         	</dd>
         </dl>
-
+		<div class="link_button">
+			<a href="<!--{$smarty.const.TOP_URLPATH}-->">トップページへ</a>
+		</div>
     </div>
 </div>
 <!--▲CONTENTS-->
