@@ -22,6 +22,8 @@
  */
 
 // {{{ requires
+require_once CLASS_EX_REALDIR . 'SC_Product_Ex.php';
+require_once CLASS_EX_REALDIR . 'SC_Query_Ex.php';
 require_once CLASS_REALDIR . 'pages/LC_Page_Index.php';
 
 /**
@@ -45,6 +47,7 @@ class LC_Page_Index_Ex extends LC_Page_Index {
      */
     function init() {
         parent::init();
+        //$this->tpl_mainpage = 'index.tpl';
     }
 
     /**
@@ -54,6 +57,25 @@ class LC_Page_Index_Ex extends LC_Page_Index {
      */
     function process() {
         parent::process();
+        //$this->action();
+    }
+    
+    function action () {
+	    //商品取得処理
+	    $objQuery = new SC_Query_Ex();
+	    $this->arrProduct = array();
+	    
+	    $table = 'dtb_products INNER JOIN dtb_products_class ON dtb_products.product_id = dtb_products_class.product_id';
+	    
+	    $where = 'status=1'; 
+	    
+	    $order = 'dtb_products.product_id DESC';
+	    
+	    $objQuery->setOrder($order);
+	    $arrProduct = $objQuery->select('*', $table, $where);
+	    if ( isset($arrProduct) ) {
+		    $this->arrProduct = $arrProduct;
+	    }
     }
 
     /**

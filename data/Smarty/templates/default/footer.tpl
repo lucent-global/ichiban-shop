@@ -23,7 +23,7 @@
 <div id="footer_wrap">
     <div id="footer" class="clearfix">
         <p>1日1ピン限定の超お得タイムセールの『いちばんショップ』｜</p>
-        <ul class="clearfix">
+        <ul>
         	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/login">マイページ</a></li>
         	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->guide/privacy.php">ご利用ガイド</a></li>
         	<li><a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/">お問い合わせ</a></li>

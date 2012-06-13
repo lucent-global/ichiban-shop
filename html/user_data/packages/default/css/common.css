@@ -18,13 +18,13 @@ select {
     border: 1px solid #ccc;
 }
 
-
 /* ==============================================
  フレーム
 =============================================== */
 /* 全体を包括 */
 .frame_outer {
     width: 100%;
+    min-width:1172px;
 }
 
 /* ラッパー */
@@ -32,7 +32,6 @@ select {
 	width:100%;
 	margin:0;
     background:url(../img/background/main-bg-texture.jpg) repeat-x;
-    min-width:1172px;
 }
 
 /* コンテンツ */
@@ -377,7 +376,7 @@ div#countDown {
     font-size:12px;
 }
 #footer {
-    margin: auto;
+    margin:0 auto;
     padding-top: 10px;
     width: 972px;
 }

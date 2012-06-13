@@ -206,6 +206,7 @@ __EOS__;
                                     array($productId, $productId));
         return $result[0];
     }
+    
 
     /**
      * 商品詳細情報と商品規格を取得する.

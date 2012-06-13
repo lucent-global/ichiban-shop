@@ -247,14 +247,14 @@ ul.button_like li a {
 }
 #container .login_area dl.formlist {
     margin-bottom: 8px;
-    width: 420px;
+    width: 435px;
 }
 #container .login_area dl.formlist dt {
     margin-bottom: 3px;
     padding-left: 15px;
     color: #333;
     background: url("../img/icon/ico_arrow_03.gif") no-repeat left;
-    width: 90px;
+    width: 105px;
     float: left;
     font-size: 90%;
 }
