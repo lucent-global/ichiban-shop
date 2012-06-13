@@ -1,8 +1,8 @@
 data/config/config.php
 
-data/Smarty/templates_c/admin/*.php
-data/Smarty/templates_c/default/*.php
-data/Smarty/templates_c/mobile/*.php
-data/Smarty/templages_c/sphone/*.php
+data/Smarty/templates_c/admin/**/*
+data/Smarty/templates_c/default/**/*
+data/Smarty/templates_c/mobile/**/*
+data/Smarty/templates_c/sphone/**/*
 
-data/cache/*
+data/cache/**/*
